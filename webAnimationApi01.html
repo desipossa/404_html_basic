@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button id="btn">play</button>
+    <script>
+        const BOX = document.querySelector('.box');
+        const BTN = document.querySelector('#btn');
+
+        const BOXANI = BOX.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: 'translate(0, 500px)' },
+            { transform: 'translate(500px, 500px)' },
+            { transform: 'translate(500px, 0)' },
+            { transform: 'translate(0, 0)' },
+        ], {
+            duration: 1000,
+            fill: 'both'
+        });
+
+
+        BOXANI.pause();
+        BTN.addEventListener('click', () => {
+            BOXANI.play();
+        })
+
+
+    </script>
+</body>
+
+</html>
