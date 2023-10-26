@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단메뉴 반응형 홈페이지를 만들면서 position을 이해하기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/custom.js" defer></script>
+</head>
+
+<body>
+    <!-- position 과 display 를 응용하여 반응형 홈페이지 만들기 -->
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1><a href="">Lee's responsive web</a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="">menu01</a>
+                            <ul class="sub">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">menu02</a>
+                            <ul class="sub">
+
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">menu03</a>
+                            <ul class="sub">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">menu04</a></li>
+                        <li><a href="">menu05</a></li>
+                    </ul>
+                </nav>
+                <div class="mbtn">
+                    <i class="xi-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="mainVisual"></section>
+        </main>
+        <footer class="footer">
+            &copy; Lee's responsive web.
+        </footer>
+    </div>
+</body>
+
+</html>
