@@ -40,6 +40,54 @@
 
 
     </script>
+    <!-- https://fe-developers.kakaoent.com/2022/220630-four-ways-web-animation/ -->
+    <!-- let isAnimating = false;
+let isClose = false;
+
+const animationApi = document.querySelector(".animation-api");
+const firstStick = animationApi.querySelector(".stick:nth-child(1)");
+const secondStick = animationApi.querySelector(".stick:nth-child(2)");
+const thirdStick = animationApi.querySelector(".stick:nth-child(3)");
+animationApi.addEventListener("click", handleClickAnimationApi);
+
+function getRotateAnimation(deg, isReverse) {
+  return [
+    [
+      { transform: "rotate(0)", width: "120px" },
+      { transform: `rotate(${deg}deg)`, width: "136px" },
+    ],
+    getOptions(isReverse),
+  ];
+}
+function getShrinkAnimation(isReverse) {
+  return [{ transform: ["scale(1)", "scale(0.2)"] }, getOptions(isReverse)];
+}
+function getOptions(isReverse) {
+  return {
+    duration: 300,
+    fill: "forwards",
+    direction: isReverse ? "reverse" : undefined,
+    easing: "ease",
+  };
+}
+
+function handleClickAnimationApi() {
+  if (isAnimating) return;
+  firstStick.animate(...getRotateAnimation(45, isClose));
+  secondStick.animate(...getShrinkAnimation(isClose));
+  const player = thirdStick.animate(...getRotateAnimation(-45, isClose));
+  player.ready.then(
+    () => (isAnimating = true),
+    () => (isAnimating = false)
+  );
+  player.finished.then(
+    () => {
+      isClose = !isClose;
+      isAnimating = false;
+    },
+    () => (isAnimating = false)
+  );
+} -->
 </body>
 
 </html>
